@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono');
+@import url('https://fonts.googleapis.com/css?family=Ropa+Sans');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+@font-face {
+    font-family:"TGmed";
+    src: url(TitlingGothicFBNar-Med.otf);
+}
+
+@font-face {
+    font-family:"LGbold";
+    src: url(LetterGothicStd-Bold.otf);
+}
+
+
+body {
+  font-family:"TGmed";
+  color: white;
+    zoom:90%;
+}
+
+section {
+  max-width: 57%;
+  margin: auto;
+  text-align: center;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #FFF;
+}
+
+.video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-wrap video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.landing-text {
+    font-family: "TGmed";
+    position:absolute;
+    text-align: center;
+    top: 22vw;
+    left: 22vw;
+    font-size: 12vw;
+    text-align: left;
+    margin: 0vw;
+}
+
+.landing-text2 {
+    font-family: "TGmed";
+    position:absolute;
+    top: 34vw;
+    left: 35vw;
+    font-size: 12vw;
+    text-align: left;
+    margin: 0vw;
+}
+
+.about {
+    /*-webkit-transform: rotate(-90deg);*/
+    position: absolute;
+    text-align: left;
+    top:2vw;
+    left:98vw;
+    font-family:"TGmed";
+    letter-spacing: .08vw;
+    line-height: 2.2vw;
+    font-size: .7vw;
+    color: white;
+    text-decoration: none;
+}
+.about:hover {
+    color: black;
+}
+
+.book {
+    position: absolute;
+    text-align: left;
+    top:2vw;
+    left:20vw;
+    font-family:"TGmed";
+    letter-spacing: .08vw;
+    line-height: 2.2vw;
+    font-size: .7vw;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.book:hover {
+    color: black;
+}
+
+.creator{
+    position: absolute;
+    text-align: left;
+    top:2vw;
+    left:4vw;
+    font-family:"TGmed";
+    letter-spacing: .08vw;
+    line-height: 2.2vw;
+    font-size: .7vw;
+    color: white;
+    text-decoration: none;  
+}
+
+.creator:hover {
+    color: black;
+}
+
+/*.arrow {
+    position: absolute;
+    top: 48vw;
+    left: 80vw;
+    width: 8vw;
+    opacity: 0.5;
+    -webkit-transform: rotate(-90deg);*/
+}
+.btn {
+  line-height: 5;
+}

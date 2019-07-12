@@ -1,0 +1,994 @@
+
+@font-face { 
+   font-family: PTMONO; 
+   src: url('PTMono.ttc'); 
+}
+
+body {
+    background-color: black;
+    zoom:90%;
+}
+
+/* removes blue highlight */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/* color icons */
+.circle01 {
+      left: 95vw;
+      top: 41.3vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      background: orange;
+      position: fixed;
+    }
+.circle02 {
+      left: 95vw;
+      top: 42.3vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: lightblue;
+    position: fixed;
+    }
+.circle03 {
+      position: absolute;
+      left: 95vw;
+      top: 43.3vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: limegreen;
+     position: fixed;
+    }
+.circle04 {
+      position: absolute;
+      left: 95vw;
+      top: 44.3vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: mediumpurple;
+    position: fixed;
+    }
+.circle05 {
+      position: absolute;
+      left: 95vw;
+      top: 45.4vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: blue;
+    position: fixed;
+    }
+.circle06 {
+      position: absolute;
+      left: 95vw;
+      top: 46.4vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: deeppink;
+    position: fixed;
+    
+    
+    }
+.circle07 {
+      position: absolute;
+      left: 95vw;
+      top: 47.4vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: TURQUOISE;
+    position: fixed;
+    }
+.circle08 {
+      position: absolute;
+      left: 95vw;
+      top: 48.4vw;
+      width: .5vw;
+      height: .5vw ;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: yellow;
+    position: fixed;
+    }
+.circle09 {
+      position: absolute;
+      left: 95vw;
+      top: 49.4vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: red;
+    position: fixed;
+    }
+.circle10 {
+      position: absolute;
+      left: 95vw;
+      top: 50.4vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background:peachpuff;
+    position: fixed;
+    }
+
+/* x & y labels for graph */
+.extraverted_y{
+    letter-spacing: 2.5vw;
+    writing-mode: tb-rl;
+   font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: 1vw;
+    color: white;
+    position: absolute;
+    top:20.5vw;
+    left:19vw;
+   }
+.introverted_x{
+    letter-spacing: 2.5vw;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: 1vw;
+    color: white;
+    position: absolute;
+    top:60vw;
+    left:40vw;
+    margin-bottom: 2vw;
+   }
+
+/* slider labels */
+.introverted_scale{
+    letter-spacing: .8vw;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .8vw;
+    color: white;
+    position: absolute;
+    top:15vw;
+    left:86vw;
+   }
+.extraverted_scale{
+    letter-spacing: .8vw;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .8vw;
+    color: white;
+    position: absolute;
+    top:45vw;
+    left:85.5vw;
+   }
+.slider {
+    -webkit-appearance: none;
+    -webkit-transform: rotate(90deg);
+    position: absolute;
+    left: 80vw;
+    top: 30vw;
+    width: 20vw;
+    height: .1vw; 
+    background: white;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -webkit-transform: rotate(90deg);
+    appearance: none;
+    width: .8vw;
+    height: .8vw;
+    border-radius: 50%; 
+    background: white;
+    cursor: pointer;
+}
+.slider::-moz-range-thumb {
+    width: .8vw;
+    height: .8vw;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+
+/* button elements */
+.button {
+    background-color: white;
+    border: none;
+    padding: .01vw;
+    display: inline-block;
+    margin: .2vw .2vw;
+    cursor: pointer;
+    border-radius: 50vw;
+    position:absolute;
+}
+#buttondata{
+    font-family: 'Fira Mono', monospace;
+    letter-spacing: 5px;
+    font-size: 8px;
+    color:white;
+    opacity: 0;
+    position:absolute;
+    top: -12px;
+    left: 50px;
+    transition: 0.5s; 
+}
+.zoom {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform .2s; 
+}
+.zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+    background-color: blue;
+}
+.button:hover #buttondata {
+/* When you hover over a button, the button's 
+child's opacity changes */
+    opacity: 1;
+}
+.button:hover {
+/* Makes it so that when you're hovering over a 
+button, it isn't covered by another button*/
+    z-index: 100;
+}
+
+
+/* 32 buttons */
+
+.button1 {
+    top: 385px;
+    left: 660px;
+}
+.button2 {
+    top: 520px;
+    left: 770px;
+}
+
+.button3 {
+    top: 668px;
+    left: 943px;
+}
+
+.button4 {
+    top: 725px;
+    left: 985px;
+}
+
+.button5 {
+    top: 545px;
+    left: 810px;
+}
+
+.button6 {
+    top: 470px;
+    left: 725px;
+}
+
+.button7 {
+    top: 520px;
+    left: 773px;
+}
+
+.button8 {
+   top: 470px;
+    left: 727px;
+}
+
+.button9 {
+    top: 470px;
+    left: 728px;
+}
+
+.button10 {
+    top: 620px;
+    left: 888px;
+}
+
+.button11 {
+    top: 475px;
+    left: 740px;
+}
+
+.button12 {
+    top: 420px;
+    left: 690px;
+}
+
+.button13 {
+    top: 635px;
+    left: 910px;
+}
+
+
+.button14 {
+    top: 415px;
+    left: 680px;
+}
+.button15 {
+    top: 348px;
+    left: 585px;
+}
+
+.button16 {
+    top: 530px;
+    left: 780px;
+}
+
+.button17 {
+    top: 540px;
+    left: 797px;
+}
+
+.button18 {
+    top: 600px;
+    left: 870px;
+}
+
+.button19 {
+    top: 668px;
+    left: 940px;
+}
+
+.button20 {
+    top: 600px;
+    left: 870px;
+}
+
+.button21 {
+    top: 560px; 
+    left: 830px;
+}
+
+.button22 {
+    top: 600px;
+    left: 873px;
+}
+.button23 {
+    top: 590px;
+    left: 860px;
+}
+.button24 {
+    top: 520px;
+    left: 770px; 
+}
+.button25 {
+    top: 708px;
+    left: 975px; 
+}
+.button26 {
+    top: 440px;
+    left: 710px;
+}
+.button27 {
+    top: 695px;
+    left: 965px;
+}
+
+.button28 {
+    top: 680px;
+    left: 945px;
+}
+
+.button29 {
+    top: 485px;
+    left: 750px;
+}
+
+.button30 {
+    top: 620px;
+    left: 887px;
+}
+
+.button31 {
+    top: 545px;
+    left: 806px;
+}
+
+.button32 {
+    top: 485px;
+    left: 753px;
+}
+
+/* 32 Overlays */
+#overlay_01 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_02 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_03 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_04 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_05 {
+   position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_06 {
+position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_07 {
+   position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_08 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_09 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_10 {
+   position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_11 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_12 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_13 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_14 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_15 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_16 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_17 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_18 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_19 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_20 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_21 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_22 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_23 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_24 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_25 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_26 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_27 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_28 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_29 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_30 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_31 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_32 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/*overlay content*/
+#textName{
+    position: absolute;
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace; 
+    top: 2.5vw;
+    left: 94vw;
+    font-size: 1vw;
+    color: white;
+}
+#textType{
+    position: absolute;
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace; 
+    top: 30vw;
+    left: 94vw;
+    font-size: 1vw;
+    color: white;
+}
+#textInfo{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:41.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_2{
+   letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:42.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_3{
+     letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:43.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_4{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:44.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_5{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:45.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_6{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:46.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_7{
+   letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:47.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_8{
+   letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:48.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_9{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:49.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_10{
+  letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:50.3vw;
+    left:98vw;
+    position:fixed;
+}
+.exit{
+    position: absolute;
+    font-family: 'Fira Mono', monospace; 
+    top: 2vw;
+    left: 105vw;
+    font-size: 1vw;
+    color: white;
+}
+
+/*video*/
+.imagesize{
+    height:85%;
+    width:85%;
+}
+.video_placement{
+    position: absolute;
+    top: 8vw;
+    left: 5vw;
+    width: 75vw;
+}
+
+/*graph numbers*/
+#graph {
+    position: absolute;
+    top: 1.7vw;
+    left: 24.3vw;
+    width: 55.5vw
+}
+
+.hundred {
+    font-size: .75vw;
+    color: white;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    top: 8.2vw;
+    left: 24.2vw;
+}
+.eighty {
+       font-size: .75vw;
+    color: white;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    top: 17.4vw;
+    left: 24.2vw;
+}
+.sixty {
+     font-size: .75vw;
+    color: white;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    top: 26.5vw;
+    left: 24.2vw;
+}
+.fourty {
+     font-size: .75vw;
+    color: white;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    top: 36vw;
+    left: 24.2vw;
+}
+.twenty {
+     font-size: .75vw;
+    color: white;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    top: 45.2vw;
+    left: 24.2vw;
+}
+.zero {
+    font-size: .75vw;
+    color: white;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    top: 56vw;
+    left: 24.5vw;
+}
+.twenty1 {
+    font-size: .75vw;
+    color: white;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    top: 56vw;
+    left: 35.5vw;
+}
+.fourty1 {
+    font-size: .75vw;
+    color: white;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    top: 56vw;
+    left: 44.5vw;
+}
+.sixty1 {
+    font-size: .75vw;
+    color: white;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    top: 56vw;
+    left: 54vw;
+}
+.eighty1 {
+    font-size: .75vw;
+    color: white;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    top: 56vw;
+    left: 63vw;
+}
+.hundred1 {
+    font-size: .75vw;
+    color: white;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    top: 56vw;
+    left: 72vw;
+}
+
+/* Dropdown Menu */
+.dropbtn {
+    background-color: white;
+    padding: .2vw 2vw;
+    font-size: 16px;
+    border: none;
+    cursor: pointer; 
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: absolute;
+    top: 3vw;
+    left: 100vw;
+}
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: none;
+    top: 1vw;
+    z-index: 1;
+    margin-left:-1.5vw;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    font-size: .7vw;
+    font-family: 'Fira Mono', monospace;
+    padding: 1vw 1vw;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: none}
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}

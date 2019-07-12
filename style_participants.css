@@ -1,0 +1,1938 @@
+@font-face { 
+   font-family: PTMONO; 
+   src: url('PTMono.ttc'); 
+}
+
+@font-face {
+    font-family:"TGmed";
+    src: url(TitlingGothicFBNar-Med.otf);
+}
+
+@font-face {
+    font-family:"TGextmed";
+    src: url(TitlingGothicFBExt-Med.otf);
+}
+
+@font-face {
+    font-family:"LGbold";
+    src: url(LetterGothicStd-Bold.otf);
+}
+
+
+
+
+body {
+    background-color: black;
+    zoom: 90%;
+}
+
+/* removes blue highlight */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/* color icons */
+.circle01 {
+      left: 95vw;
+      top: 41.3vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      background: orange;
+      position: fixed;
+    }
+.circle02 {
+      left: 95vw;
+      top: 42.3vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: lightblue;
+    position: fixed;
+    }
+.circle03 {
+      position: absolute;
+      left: 95vw;
+      top: 43.3vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: limegreen;
+     position: fixed;
+    }
+.circle04 {
+      position: absolute;
+      left: 95vw;
+      top: 44.3vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: mediumpurple;
+    position: fixed;
+    }
+.circle05 {
+      position: absolute;
+      left: 95vw;
+      top: 45.4vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: blue;
+    position: fixed;
+    }
+.circle06 {
+      position: absolute;
+      left: 95vw;
+      top: 46.4vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: deeppink;
+    position: fixed;
+    
+    
+    }
+.circle07 {
+      position: absolute;
+      left: 95vw;
+      top: 47.4vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: TURQUOISE;
+    position: fixed;
+    }
+.circle08 {
+      position: absolute;
+      left: 95vw;
+      top: 48.4vw;
+      width: .5vw;
+      height: .5vw ;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: yellow;
+    position: fixed;
+    }
+.circle09 {
+      position: absolute;
+      left: 95vw;
+      top: 49.4vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: red;
+    position: fixed;
+    }
+.circle10 {
+      position: absolute;
+      left: 95vw;
+      top: 50.4vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background:peachpuff;
+    position: fixed;
+    }
+.color_ex{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: 1vw;
+    color:white;
+    position: absolute;
+    top:30.8vw;
+    left:95vw;
+    position:fixed;
+}
+
+/* color labels */
+.color1_ex{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:41.8vw;
+    left:98vw;
+    position:fixed;
+}
+.color2_ex{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:42.8vw;
+    left:98vw;
+    position:fixed;
+}
+.color3_ex{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:43.8vw;
+    left:98vw;
+    position:fixed;
+}
+.color4_ex{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:44.8vw;
+    left:98vw;
+    position:fixed;
+}
+.color5_ex{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:45.8vw;
+    left:98vw;
+    position:fixed;
+}
+.color6_ex{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:46.8vw;
+    left:98vw;
+    position:fixed;
+}
+.color7_ex{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:47.8vw;
+    left:98vw;
+    position:fixed;
+}
+.color8_ex{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:48.8vw;
+    left:98vw;
+    position:fixed;
+}
+.color9_ex{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:49.8vw;
+    left:98vw;
+    position:fixed;
+}
+.color10_ex{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size:.6vw;
+    color:white;
+    position: absolute;
+    top:50.8vw;
+    left:98vw;
+    position:fixed;
+}
+
+/* image container elements */
+
+.text {
+    font-family:"TGextmed";
+    color: white;
+    letter-spacing: .08vw;
+    line-height: 2.2vw;
+    font-size: .7vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container {
+    padding: 0;
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 10vw;
+    left: 15vw;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image {
+    display: block;
+    width: 18vw;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+    cursor: pointer;
+}
+.container:hover .overlay {
+  opacity: 0.9;
+}
+
+.container2 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 10vw;
+  left: 35.8vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image2 {
+  display: block;
+  width: 18vw;
+}
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container2:hover .overlay2 {
+  opacity: 0.9;
+}
+
+.container3 {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 10vw;
+    left: 56.5vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image3 {
+  display: block;
+  width: 18vw;
+}
+.overlay3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container3:hover .overlay3 {
+  opacity: 0.9;
+}
+
+.container4 {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 10vw;
+    left: 77vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image4 {
+  display: block;
+  width: 18vw;
+}
+.overlay4 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container4:hover .overlay4 {
+  opacity: 0.9;
+}
+
+.container5 {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 31vw;
+    left: 15vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image5 {
+  display: block;
+  width: 18vw;
+}
+.overlay5 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+    
+}
+.container5:hover .overlay5 {
+  opacity: 0.9;
+}
+
+.container6 {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 31vw;
+    left: 35.8vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image6 {
+  display: block;
+  width: 18vw;
+}
+.overlay6 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container6:hover .overlay6 {
+  opacity: 0.9;
+}
+
+.container7 {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 31vw;
+    left: 56.5vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image7 {
+  display: block;
+  width: 18vw;
+}
+.overlay7 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container7:hover .overlay7 {
+  opacity: 0.9;
+}
+
+.container8 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 31vw;
+  left: 77vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image8 {
+  display: block;
+  width: 18vw;
+}
+.overlay8 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container8:hover .overlay8 {
+  opacity: 0.9;
+}
+
+.container9 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 52vw;
+  left: 15vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image9 {
+  display: block;
+  width: 18vw;
+}
+.overlay9 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container9:hover .overlay9 {
+  opacity: 0.9;
+}
+
+.container10 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 52vw;
+  left: 35.8vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image10 {
+  display: block;
+  width: 18vw;
+}
+.overlay10 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container10:hover .overlay10 {
+  opacity: 0.9;
+}
+
+.container11 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 52vw;
+  left: 56.5vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image11 {
+  display: block;
+  width: 18vw;
+}
+.overlay11 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container11:hover .overlay11 {
+  opacity: 0.9;
+}
+
+.container12 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 52vw;
+  left: 77vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image12 {
+  display: block;
+  width: 18vw;
+}
+.overlay12 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container12:hover .overlay12 {
+  opacity: 0.9;
+}
+
+.container13 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 73vw;
+  left: 15vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image13 {
+  display: block;
+  width: 18vw;
+}
+.overlay13 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container13:hover .overlay13 {
+  opacity: 0.9;
+}
+
+.container14 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 73vw;
+  left: 35.8vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image14 {
+  display: block;
+  width: 18vw;
+}
+.overlay14 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container14:hover .overlay14 {
+  opacity: 0.9;
+}
+
+.container15 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 73vw;
+  left: 56.5vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image15 {
+  display: block;
+  width: 18vw;
+}
+.overlay15 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container15:hover .overlay15 {
+  opacity: 0.9;
+}
+
+.container16 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 73vw;
+  left: 77vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image16 {
+  display: block;
+  width: 18vw;
+}
+.overlay16 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container16:hover .overlay16 {
+  opacity: 0.9;
+}
+
+.container17 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 94vw;
+  left: 15vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image17 {
+  display: block;
+  width: 18vw;
+}
+.overlay17 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container17:hover .overlay17 {
+  opacity: 0.9;
+}
+
+.container18 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 94vw;
+  left: 35.8vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image18 {
+  display: block;
+  width:18vw;
+}
+.overlay18 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container18:hover .overlay18 {
+  opacity: 0.9;
+}
+
+.container19 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 94vw;
+  left: 56.5vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image19 {
+  display: block;
+  width: 18vw;
+}
+.overlay19 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container19:hover .overlay19 {
+  opacity: 0.9;
+}
+
+.container20 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 94vw;
+  left: 77vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image20 {
+  display: block;
+  width: 18vw;
+}
+.overlay20 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container20:hover .overlay20 {
+  opacity: 0.9;
+}
+
+.container21 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 115vw;
+  left: 15vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image21 {
+  display: block;
+  width: 18vw;
+}
+.overlay21 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container21:hover .overlay21 {
+  opacity: 0.9;
+}
+
+.container22 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 115vw;
+  left: 35.8vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image22 {
+  display: block;
+  width: 18vw;
+}
+.overlay22 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container22:hover .overlay22 {
+  opacity: 0.9;
+}
+
+.container23 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 115vw;
+  left: 56.5vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image23 {
+  display: block;
+  width: 18vw;
+}
+.overlay23 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container23:hover .overlay23 {
+  opacity: 0.9;
+}
+
+.container24 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 115vw;
+  left: 77vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image24 {
+  display: block;
+  width: 18vw;
+}
+.overlay24 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container24:hover .overlay24 {
+  opacity: 0.9;
+}
+
+.container25 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 136vw;
+  left: 15vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image25 {
+  display: block;
+  width: 18vw;
+}
+.overlay25 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container25:hover .overlay25 {
+  opacity: 0.9;
+}
+
+.container26 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 136vw;
+  left: 35.8vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image26 {
+  display: block;
+  width: 18vw;
+}
+.overlay26 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container26:hover .overlay26 {
+  opacity: 0.9;
+}
+
+.container27 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 136vw;
+  left: 56.5vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image27 {
+  display: block;
+  width: 18vw;
+}
+.overlay27 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container27:hover .overlay27 {
+  opacity: 0.9;
+}
+
+.container28 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 136vw;
+  left: 77vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image28 {
+  display: block;
+  width: 18vw;
+}
+.overlay28 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container28:hover .overlay28 {
+  opacity: 0.9;
+}
+
+.container29 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 157vw;
+  left: 15vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image29 {
+  display: block;
+  width: 18vw;
+}
+.overlay29 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container29:hover .overlay29 {
+  opacity: 0.9;
+}
+
+.container30 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 157vw;
+  left: 35.8vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image30 {
+  display: block;
+  width: 18vw;
+}
+.overlay30 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container30:hover .overlay30 {
+  opacity: 0.9;
+}
+
+.container31 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 157vw;
+  left: 56.5vw;
+    
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image31 {
+  display: block;
+  width: 18vw;
+}
+.overlay31 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container31:hover .overlay31 {
+  opacity: 0.9;
+}
+
+.container32 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 157vw;
+  left: 77vw;
+    margin-bottom: 10vw;
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.image32 {
+  display: block;
+  width: 18vw;
+    
+}
+.overlay32 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container32:hover .overlay32 {
+  opacity: 0.9;
+}
+
+
+
+/* 32 Overlays */
+
+#overlay_01 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_02 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_03 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_04 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_05 {
+   position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_06 {
+position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_07 {
+   position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_08 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_09 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_10 {
+   position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_11 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_12 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_13 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_14 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_15 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_16 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_17 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_18 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_19 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_20 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_21 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_22 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_23 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_24 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_25 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_26 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_27 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_28 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_29 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_30 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_31 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+#overlay_32 {
+    position: fixed;
+    top:10vw;
+    left:12vw;
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    z-index: 2;
+}
+
+/*overlay content*/
+#textName{
+    position: absolute;
+    letter-spacing: 1px;
+    font-family: "TGextmed"; 
+    top: 3vw;
+    left: 45vw;
+    font-size: .45vw;
+    line-height: .8vw;
+    color: white;
+}
+#textType{
+    position: absolute;
+    letter-spacing: 1px;
+    font-family: "TGextmed"; 
+    top: 3vw;
+    left: 4vw;
+    font-size: .45vw;
+    color: white;
+}
+#textInfo{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:41.3vw;
+    left:98vw;
+    position:fixed;
+}
+
+.img01{
+    position: absolute;
+    top:13.5vw;
+    left:52vw;
+    width:32%; 
+}
+
+.dye01{
+    display: none;
+    position: absolute;
+    top:13vw;
+    left:52vw;
+    width:32%; 
+}
+#textInfo_2{
+   letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:42.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_3{
+     letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:43.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_4{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:44.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_5{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:45.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_6{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:46.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_7{
+   letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:47.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_8{
+   letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:48.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_9{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:49.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_10{
+  letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:50.3vw;
+    left:98vw;
+    position:fixed;
+}
+.exit{
+    position: absolute; 
+    top: 3vw;
+    left: 80vw;
+    width:1.6%;
+    cursor: pointer;
+}
+
+.next{
+    position: absolute;
+     top: 43vw;
+    left: 66vw;
+    width:2%;
+    cursor: pointer;
+}
+
+/*video*/
+.imagesize{
+    height:85%;
+    width:85%;
+}
+.video_placement{
+    position: absolute;
+    top: 13vw;
+    left: 4vw;
+    width: 45vw;
+}
+
+
+.home {
+    /*-webkit-transform: rotate(-90deg);*/
+    position: fixed;
+    text-align: left;
+    top:2vw;
+    left:105vw;
+    font-family:"TGmed";
+    letter-spacing: .08vw;
+    line-height: 2.2vw;
+    font-size: .7vw;
+    color: white;
+    text-decoration: none;
+}
+.home:hover {
+    color: blue;
+}
+
+.book {
+    position: fixed;
+    text-align: left;
+    top:2vw;
+    left:20vw;
+    font-family:"TGmed";
+    letter-spacing: .08vw;
+    line-height: 2.2vw;
+    font-size: .7vw;
+    color: white;
+    text-decoration: none;
+    z-index: 2;
+    
+}
+
+.book:hover {
+    color: blue;
+}
+
+.creator{
+    position: fixed;
+    text-align: left;
+    top:2vw;
+    left:4vw;
+    font-family:"TGmed";
+    letter-spacing: .08vw;
+    line-height: 2.2vw;
+    font-size: .7vw;
+    color: white;
+    text-decoration: none;  
+}
+
+.about{
+    position: fixed;
+    text-align: left;
+    top:2vw;
+    left:90vw;
+    font-family:"TGmed";
+    letter-spacing: .08vw;
+    line-height: 2.2vw;
+    font-size: .7vw;
+    color: white;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.data:hover {
+    color: blue;
+}
+
+.creator:hover {
+    color: blue;
+}
+
+/* Dropdown Menu */
+.dropbtn {
+    background-color: white;
+    padding: .2vw 2vw;
+    font-size: 16px;
+    border: none;
+    cursor: pointer; 
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: absolute;
+    top: 3vw;
+    left: 100vw;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: none;
+    top: 1vw;
+    z-index: 1;
+    margin-left:-1.5vw;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    font-size: .7vw;
+    font-family: 'Fira Mono', monospace;
+    padding: 1vw 1vw;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: none}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}

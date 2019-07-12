@@ -1,0 +1,1032 @@
+
+@font-face { 
+   font-family: PTMONO; 
+   src: url('PTMono.ttc'); 
+}
+
+body {
+    background-color: black;
+    zoom:90%;
+}
+
+/* removes blue highlight */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/* color icons */
+.circle01 {
+      left: 95vw;
+      top: 41.3vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      background: orange;
+      position: fixed;
+    }
+.circle02 {
+      left: 95vw;
+      top: 42.3vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: lightblue;
+    position: fixed;
+    }
+.circle03 {
+      position: absolute;
+      left: 95vw;
+      top: 43.3vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: limegreen;
+     position: fixed;
+    }
+.circle04 {
+      position: absolute;
+      left: 95vw;
+      top: 44.3vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: mediumpurple;
+    position: fixed;
+    }
+.circle05 {
+      position: absolute;
+      left: 95vw;
+      top: 45.4vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: blue;
+    position: fixed;
+    }
+.circle06 {
+      position: absolute;
+      left: 95vw;
+      top: 46.4vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: deeppink;
+    position: fixed;
+    
+    
+    }
+.circle07 {
+      position: absolute;
+      left: 95vw;
+      top: 47.4vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: TURQUOISE;
+    position: fixed;
+    }
+.circle08 {
+      position: absolute;
+      left: 95vw;
+      top: 48.4vw;
+      width: .5vw;
+      height: .5vw ;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: yellow;
+    position: fixed;
+    }
+.circle09 {
+      position: absolute;
+      left: 95vw;
+      top: 49.4vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background: red;
+    position: fixed;
+    }
+.circle10 {
+      position: absolute;
+      left: 95vw;
+      top: 50.4vw;
+      width: .5vw;
+      height: .5vw;
+      -webkit-border-radius: 25vw;
+      -moz-border-radius: 25vw;
+      border-radius: 25vw;
+      background:peachpuff;
+    position: fixed;
+    }
+
+/* x & y labels for graph */
+.extraverted_y{
+    letter-spacing: 2.5vw;
+    writing-mode: tb-rl;
+   font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: 1vw;
+    color: white;
+    position: absolute;
+    top:18vw;
+    left:19vw;
+   }
+.introverted_x{
+    letter-spacing: 2.5vw;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: 1vw;
+    color: white;
+    position: absolute;
+    top:60vw;
+    left:38vw;
+    margin-bottom: 2vw;
+   }
+
+/* slider labels */
+.introverted_scale{
+    letter-spacing: .8vw;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .8vw;
+    color: white;
+    position: absolute;
+    top:15vw;
+    left:84.5vw;
+   }
+.extraverted_scale{
+    letter-spacing: .8vw;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .8vw;
+    color: white;
+    position: absolute;
+    top:45vw;
+    left:84.5vw;
+   }
+.slider {
+    -webkit-appearance: none;
+    -webkit-transform: rotate(90deg);
+    position: absolute;
+    left: 80vw;
+    top: 30vw;
+    width: 20vw;
+    height: .1vw; 
+    background: white;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -webkit-transform: rotate(90deg);
+    appearance: none;
+    width: .8vw;
+    height: .8vw;
+    border-radius: 50%; 
+    background: white;
+    cursor: pointer;
+}
+.slider::-moz-range-thumb {
+    width: .8vw;
+    height: .8vw;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+
+/* button elements */
+.button {
+    background-color: white;
+    border: none;
+    padding: .01vw;
+    display: inline-block;
+    margin: .2vw .2vw;
+    cursor: pointer;
+    border-radius: 50vw;
+    position:absolute;
+}
+#buttondata{
+    font-family: 'Fira Mono', monospace;
+    letter-spacing: 5px;
+    font-size: 8px;
+    color:white;
+    opacity: 0;
+    position:absolute;
+    top: -12px;
+    left: 50px;
+    transition: 0.5s; 
+}
+.zoom {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform .2s; 
+}
+.zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+    background-color: blue;
+}
+.button:hover #buttondata {
+/* When you hover over a button, the button's 
+child's opacity changes */
+    opacity: 1;
+}
+.button:hover {
+/* Makes it so that when you're hovering over a 
+button, it isn't covered by another button*/
+    z-index: 100;
+}
+
+
+/* 32 buttons */
+.button1 {
+    /*77/23*/
+    top: 270px;
+    left: 530px;
+}
+.button2 {
+    /*62/38*/
+    top: 370px;
+    left: 625px;
+}
+
+/*64/36*/ 
+.button3 {
+    top: 355px;
+    left: 600px;
+}
+
+/*85/15*/
+.button4 {
+    top: 220px;
+    left: 480px;
+}
+
+/*58/42*/
+.button5 {
+    top: 400px;
+    left: 660px;
+}
+
+/*76/24*/
+.button6 {
+    top: 275px;
+    left: 545px;
+}
+
+/*63/37*/
+.button7 {
+    top: 365px;
+    left: 620px;
+}
+
+/*59/41*/
+.button8 {
+    top: 390px;
+    left: 660px;
+}
+
+/*62/38*/
+.button9 {
+    top: 370px;
+    left: 620px;
+}
+
+/*55/45*/
+.button10 {
+    top: 415px;
+    left: 688px;
+}
+
+/*56/44*/
+.button11 {
+    top: 410px;
+    left: 684px;
+}
+
+/*52/48*/
+.button12 {
+    top: 440px;
+    left: 690px;
+}
+
+/*56/44*/
+.button13 {
+    top: 410px;
+    left: 680px;
+}
+
+/*71/29*/
+.button14 {
+    top: 320px;
+    left: 580px;
+}
+
+/*6/94*/
+.button15 {
+    top: 715px;
+    left: 1010px;
+}
+
+/*84/16*/
+.button16 {
+    top: 220px;
+    left: 485px;
+}
+
+/*42/59*/
+.button17 {
+    top: 505px;
+    left: 780px;
+}
+
+/*76/24*/
+.button18 {
+    top: 275px;
+    left: 540px;
+}
+
+/*81/24*/
+.button19 {
+    top: 245px;
+    left: 525px;
+}
+
+/*87/23 (change) */
+.button20 {
+    top: 210px;
+    left: 465px;
+}
+
+/*72/28*/
+.button21 {
+    top: 310px;
+    left: 590px;
+}
+
+/*37/63*/
+.button22 {
+    top: 550px;
+    left: 800px;
+}
+
+/*59/41*/
+.button23 {
+    top: 390px;
+    left: 665px;
+}
+
+/*56/44*/
+.button24 {
+    top: 410px;
+    left: 685px;
+}
+
+/*38/62*/
+.button25 {
+    top: 385px;
+    left: 640px;
+}
+
+/*51/49*/
+.button26 {
+     top: 445px;
+    left: 698px;
+}
+
+/*62/38*/
+.button27 {
+    top: 365px;
+    left: 625px;
+}
+
+/*91/9*/
+.button28 {
+    top: 180px;
+    left: 440px;
+}
+
+/*77/23*/
+.button29 {
+    top: 270px;
+    left: 535px;
+}
+
+/*64/36*/
+.button30 {
+    top: 355px;
+    left: 605px;
+}
+
+/*56/44*/
+.button31 {
+    top: 410px;
+    left: 685px;
+}
+
+/*59/41*/
+.button32 {
+    top: 390px;
+    left: 665px;
+}
+
+
+/* 32 Overlays */
+#overlay_01 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_02 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_03 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_04 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_05 {
+   position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_06 {
+position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_07 {
+   position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_08 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_09 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_10 {
+   position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_11 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_12 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_13 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_14 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_15 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_16 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_17 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_18 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_19 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_20 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_21 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_22 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_23 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_24 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_25 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_26 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_27 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_28 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_29 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_30 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_31 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_32 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/*overlay content*/
+#textName{
+    position: absolute;
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace; 
+    top: 2.5vw;
+    left: 94vw;
+    font-size: 1vw;
+    color: white;
+}
+#textType{
+    position: absolute;
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace; 
+    top: 30vw;
+    left: 94vw;
+    font-size: 1vw;
+    color: white;
+}
+#textInfo{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:41.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_2{
+   letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:42.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_3{
+     letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:43.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_4{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:44.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_5{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:45.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_6{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:46.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_7{
+   letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:47.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_8{
+   letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:48.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_9{
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:49.3vw;
+    left:98vw;
+    position:fixed;
+}
+#textInfo_10{
+  letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    font-size: .6vw;
+    color:white;
+    position: absolute;
+    top:50.3vw;
+    left:98vw;
+    position:fixed;
+}
+.exit{
+    position: absolute;
+    font-family: 'Fira Mono', monospace; 
+    top: 2vw;
+    left: 105vw;
+    font-size: 1vw;
+    color: white;
+}
+
+/*video*/
+.imagesize{
+    height:85%;
+    width:85%;
+}
+.video_placement{
+    position: absolute;
+    top: 8vw;
+    left: 5vw;
+    width: 75vw;
+}
+
+/*graph numbers*/
+#graph {
+    position: absolute;
+    top: 1.7vw;
+    left: 24.3vw;
+    width: 55.5vw
+}
+
+.hundred {
+    font-size: .75vw;
+    color: white;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    top: 8.2vw;
+    left: 24.2vw;
+}
+.eighty {
+       font-size: .75vw;
+    color: white;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    top: 17.4vw;
+    left: 24.2vw;
+}
+.sixty {
+     font-size: .75vw;
+    color: white;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    top: 26.5vw;
+    left: 24.2vw;
+}
+.fourty {
+     font-size: .75vw;
+    color: white;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    top: 36vw;
+    left: 24.2vw;
+}
+.twenty {
+     font-size: .75vw;
+    color: white;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    top: 45.2vw;
+    left: 24.2vw;
+}
+.zero {
+    font-size: .75vw;
+    color: white;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    top: 56vw;
+    left: 24.5vw;
+}
+.twenty1 {
+    font-size: .75vw;
+    color: white;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    top: 56vw;
+    left: 35.5vw;
+}
+.fourty1 {
+    font-size: .75vw;
+    color: white;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    top: 56vw;
+    left: 44.5vw;
+}
+.sixty1 {
+    font-size: .75vw;
+    color: white;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    top: 56vw;
+    left: 54vw;
+}
+.eighty1 {
+    font-size: .75vw;
+    color: white;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    top: 56vw;
+    left: 63vw;
+}
+.hundred1 {
+    font-size: .75vw;
+    color: white;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    top: 56vw;
+    left: 72vw;
+}
+
+/* Dropdown Menu */
+.dropbtn {
+    background-color: white;
+    padding: .2vw 2vw;
+    font-size: 16px;
+    border: none;
+    cursor: pointer; 
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: absolute;
+    top: 3vw;
+    left: 100vw;
+}
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: none;
+    top: 1vw;
+    z-index: 1;
+    margin-left:-1.5vw;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    font-size: .7vw;
+    font-family: 'Fira Mono', monospace;
+    padding: 1vw 1vw;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: none}
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
